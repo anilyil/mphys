@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Builders &#8212; MPhys  documentation</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/style.css" />
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/style.css?v=90ca181f" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Variable Naming Conventions" href="naming_conventions.html" />
@@ -182,6 +181,25 @@ this solver. Transfer schemes can return multiple subsystems</p>
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="mphys.builder.Builder.get_tagged_indices">
+<span class="sig-name descname"><span class="pre">get_tagged_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tags</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mphys/builder.html#Builder.get_tagged_indices"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mphys.builder.Builder.get_tagged_indices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method that returns grid IDs for a list of body/boundary tags.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>tags</strong><span class="classifier">list of integers or strings</span></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>grid_ids</strong><span class="classifier">list</span></dt><dd><p>list of grid IDs that correspond to given body/boundary tags</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -205,6 +223,7 @@ this solver. Transfer schemes can return multiple subsystems</p>
 <li><a class="reference internal" href="#mphys.builder.Builder.get_post_coupling_subsystem"><code class="docutils literal notranslate"><span class="pre">Builder.get_post_coupling_subsystem()</span></code></a></li>
 <li><a class="reference internal" href="#mphys.builder.Builder.get_number_of_nodes"><code class="docutils literal notranslate"><span class="pre">Builder.get_number_of_nodes()</span></code></a></li>
 <li><a class="reference internal" href="#mphys.builder.Builder.get_ndof"><code class="docutils literal notranslate"><span class="pre">Builder.get_ndof()</span></code></a></li>
+<li><a class="reference internal" href="#mphys.builder.Builder.get_tagged_indices"><code class="docutils literal notranslate"><span class="pre">Builder.get_tagged_indices()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -219,6 +238,7 @@ this solver. Transfer schemes can return multiple subsystems</p>
 <li class="toctree-l1"><a class="reference internal" href="tagged_promotion.html">Tagged Promotion</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Builders</a></li>
 <li class="toctree-l1"><a class="reference internal" href="naming_conventions.html">Variable Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remote_components.html">Remote Components</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Multiphysics Scenarios</span></p>
 <ul>
@@ -233,6 +253,9 @@ this solver. Transfer schemes can return multiple subsystems</p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../developers/mphys_group.html">The MphysGroup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../developers/new_multiphysics_problems.html">Extending the Scenario Library</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references/papers_using_mphys.html">Papers Using MPhys</a></li>
 </ul>
 
 <div id="searchbox" style="display: none" role="search">
@@ -269,8 +292,8 @@ this solver. Transfer schemes can return multiple subsystems</p>
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, NASA.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
+    &#169; Copyright 2022, NASA.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
     </div>
   </body>
 </html>
